@@ -1,0 +1,140 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-family: "Titillium Web", sans-serif;
+  }
+  
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    background-color: #834748;
+  }
+  
+  button {
+    font-size: 10px;
+  }
+  
+  #main-content {
+    color: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #333;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px 20px 18px 18px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px #333;
+    background-image: url("https://images.prismic.io/ai-website/d4552372-3205-49f3-b3f7-c61c435e860a_ascend-innovations--who-we-are--sunrise.jpg?auto=compress%2Cformat&q=90&w=1920");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+  
+  #list {
+    margin: 10px;
+    border: 1px solid #333;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 15px 20px 18px 18px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px #333;
+  }
+
+  .list ul {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .list-li {
+    list-style: none;
+    width: 300px;
+    /* box-shadow: 2px 2px 5px #c9c8c83e; */
+    padding: 5px;
+    margin: 10px;
+    background-color: #cc745e;
+    background: rgba9992a6(0,0,0,0.5);
+    text-align: center;
+    color: white;
+  }
+  
+  .list-li h3 {
+    font-size: x-large
+  }
+
+  .list-li h4 {
+    height: 40px;
+    margin: 0px;
+  }
+
+  .list-li p {
+    margin: 0px; 
+  }
+  
+  .list-li img {
+    width: 300px;
+    height: 265px;
+  }
+  
+  .list-li button {
+    width: 190px;
+    margin: 15px 5px 15px 5px;
+    border: none;
+    background-color: #fee574;
+    color: #834748;(255, 255, 255);
+    padding: 3px;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  #form-wrapper {
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+    border-style: dotted;
+    border-color: #fee574;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  label {
+    font-family: math;
+  }
+  
+  input {
+    height: 30px;
+    width: 100%;
+    margin: 3px;
+  }
+  
+  input[type=submit] {
+    border: none;
+    background-color: #cc745e;
+    color: white;
+    color: black(255, 255, 255);
+    padding: 3px;
+    font-size: large;
+    font-weight: bold;
+
+  }
+  
+  button, [type="submit"] {
+    cursor: pointer;
+    font-family: math;
+  }
+  
+  form {
+    margin: 10px auto;
+    width: 400px; 
+    /* these 2 lines of styles help animate transition of form from collapsed to visible */
+    max-height: 371px;
+    transition: max-height 400ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    color: #fee574;
+  }
+
