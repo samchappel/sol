@@ -16,6 +16,7 @@ html {
   
   #main-content {
     color: rgb(255, 255, 255);
+    text-shadow: black 0px 0px 2px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -130,9 +131,6 @@ html {
   form {
     margin: 10px auto;
     width: 400px; 
-    /* these 2 lines of styles help animate transition of form from collapsed to visible */
-    max-height: 371px;
-    transition: max-height 400ms ease-in-out;
     display: flex;
     flex-direction: column;
     color: #fee574;

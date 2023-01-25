@@ -107,7 +107,7 @@ function renderNationalParks(park, sunsetData) {
     dayLengthSpan.textContent = sunsetData.day_length
     dayLength.append(dayLengthSpan)
     const like = document.createElement('button')
-    like.textContent = "Like"
+    like.textContent = "Like ☀"
     sunriseList.append(li)
     li.append(image, nationalPark, location, sunrise, sunset, goldenHour, dayLength, like)
 }

@@ -8,10 +8,11 @@
       "long": "-68.273430",
       "tmz": "EST",
       "location": "Bar Harbor, Maine",
-      "sunrise": "Sunrise:",
-      "sunset": "Sunset:",
-      "golden_hour": "Golden Hour:",
-      "day_length": "Day Length:"
+      "sunrise": "Sunrise: ",
+      "sunset": "Sunset: ",
+      "golden_hour": "Golden Hour: ",
+      "day_length": "Day Length: ",
+      "likes": 17
     },
     {
       "id": 2,
@@ -21,10 +22,11 @@
         "long": "-119.538330",
         "tmz": "PST",
         "location": "Yosemite, California",
-        "sunrise": "Sunrise:",
-        "sunset": "Sunset:",
-        "golden_hour": "Golden Hour:",
-        "day_length": "Day Length:"
+        "sunrise": "Sunrise: ",
+        "sunset": "Sunset: ",
+        "golden_hour": "Golden Hour: ",
+        "day_length": "Day Length: ",
+        "likes": 13
     },
     {
       "id": 3,
@@ -34,10 +36,11 @@
       "long": "-109.878259",
       "tmz": "MST",
       "location": "Moab, Utah",
-      "sunrise": "Sunrise:",
-      "sunset": "Sunset:",
-      "golden_hour": "Golden Hour:",
-      "day_length": "Day Length:"
+      "sunrise": "Sunrise: ",
+      "sunset": "Sunset: ",
+      "golden_hour": "Golden Hour: ",
+      "day_length": "Day Length: ",
+      "likes": 11
     },
     {
       "id": 4,
@@ -47,10 +50,11 @@
       "long": "-121.2985",
       "tmz": "PST",
       "location": "Sedro-Woolley, Washington",
-      "sunrise": "Sunrise:",
-      "sunset": "Sunset:",
-      "golden_hour": "Golden Hour:",
-      "day_length": "Day Length:"
+      "sunrise": "Sunrise: ",
+      "sunset": "Sunset: ",
+      "golden_hour": "Golden Hour: ",
+      "day_length": "Day Length: ",
+      "likes": 15
     },
     {
       "id": 5,
@@ -60,10 +64,11 @@
       "long": "-83.489548",
       "tmz": "EST",
       "location": "Gatlinburg, Tennessee",
-      "sunrise": "Sunrise:",
-      "sunset": "Sunset:",
-      "golden_hour": "Golden Hour:",
-      "day_length": "Day Length:"
+      "sunrise": "Sunrise: ",
+      "sunset": "Sunset: ",
+      "golden_hour": "Golden Hour: ",
+      "day_length": "Day Length: ",
+      "likes": 7
     },
     {
       "id": 6,
@@ -73,10 +78,11 @@
       "long": "-105.688103",
       "tmz": "MST",
       "location": "Estes Park, Colorado",
-      "sunrise": "Sunrise:",
-      "sunset": "Sunset:",
-      "golden_hour": "Golden Hour:",
-      "day_length": "Day Length:"
+      "sunrise": "Sunrise: ",
+      "sunset": "Sunset: ",
+      "golden_hour": "Golden Hour: ",
+      "day_length": "Day Length: ",
+      "likes": 9
     }
   ]
 }
