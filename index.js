@@ -29,7 +29,6 @@ function getParks(parksUrl){
 //     })
 // }
 function testFunction(parksArray){
-    // console.log(parksArray)
     // console.log(parksArray[5])
     // parksArray.forEach(console.log(parksArray))
 }
