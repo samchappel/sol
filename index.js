@@ -1,14 +1,44 @@
 // GLOBAL
-const baseUrl = "api.sunrisesunset.io/json?"
+const baseUrl = "https://api.sunrisesunset.io/json?"
 const endUrl = "&date=today"
 const sunriseList = document.querySelector('#sunrise-list')
 const parksUrl = 'http://localhost:3000/parks'
 
+const yosemiteURL= 'https://api.sunrisesunset.io/json?lat=37.84835&lng=-119.55696&timezone=PST'
+getParks(parksUrl)
+function getParks(parksUrl){
+    fetch(parksUrl)
+    .then(r => r.json())
+    .then(parkArray => {
+        const sunnyParks = parkArray.map(park => getAllSunrises(park.lat, park.long, park.tmz, park))
+        // console.log(sunnyParks)
+        testFunction(sunnyParks)
+    })
+}
+// function getSunset(park){
+//     return fetch(yosemiteURL)
+//     .then(res => res.json())
+//     .then(sunsetData => {
+//         // console.log(sunsetData)
+//         renderNationalParks(park, sunsetData.results)
+//         return {...park,
+//         sunsetData
+//         // sunrise: sunsetData.results.sunrise,
+//         // sunset: sunsetData.results.sunset
+//     }
+//     })
+// }
+function testFunction(parksArray){
+    // console.log(parksArray)
+    // console.log(parksArray[5])
+    // parksArray.forEach(console.log(parksArray))
+}
+
 // FETCH FUNCTIONS
-function getAllSunrises(lat, lng, tmz) {
+function getAllSunrises(lat, lng, tmz, park) {
     return fetch(baseUrl + `lat=${lat}&lng=${lng}&timezone=${tmz}` + endUrl)
         .then(response => response.json())
-        // .then(renderNationalParks)
+        .then((sunsetData) => renderNationalParks(park, sunsetData.results))
 }
 
 function getLocationData(url) {
@@ -46,6 +76,8 @@ function getNationalParks(url) {
 
 // RENDER FUNCTIONS
 function renderNationalParks(park, sunsetData) {
+    // console.log(park)
+    console.log(sunsetData.sunrise)
     const li = document.createElement('li')
     li.className = "list-li"
     const image = document.createElement('img')
@@ -89,6 +121,6 @@ function iterateParks(parksArray) {
 // }
 
 // INITIALIZERS
-getNationalParks(parksUrl).then(parksArray => {iterateParks(parksArray)})
+// getNationalParks(parksUrl).then(parksArray => {iterateParks(parksArray)})
 // getNationalParks(parksUrl)
 // getAllSunrises("37.865101", "-119.538330", "PST")
