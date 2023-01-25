@@ -1,3 +1,4 @@
+//HELLO SAM!!!
 // GLOBAL
 const baseUrl = "https://api.sunrisesunset.io/json?"
 const endUrl = "&date=today"
