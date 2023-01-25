@@ -2,7 +2,7 @@ html {
     height: 100%;
     width: 100%;
     font-family: "Titillium Web", sans-serif;
-    cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="45" width="64"><text y="28" font-size="32">🌞</text><path d="M0,2 L0,0 L2,0" fill="red" /></svg>'), auto;
+    /* cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="45" width="64"><text y="28" font-size="32">🌞</text><path d="M0,2 L0,0 L2,0" fill="red" /></svg>'), auto; */
   }
   
   body {
@@ -126,7 +126,7 @@ html {
   
   button, [type="submit"] {
     /* cursor: pointer; */
-    cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="32" width="64"><text y="28" font-size="32">🌅</text><path d="M0,2 L0,0 L2,0" fill="red" /></svg>'), auto;
+    /* cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="32" width="64"><text y="28" font-size="32">🌅</text><path d="M0,2 L0,0 L2,0" fill="red" /></svg>'), auto; */
     font-family: math;
   }
   
@@ -136,7 +136,7 @@ html {
     display: flex;
     flex-direction: column;
     color: #fee574;
-    cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="64" width="64"><text y="28" font-size="32">🌞</text><path d="M0,2 L0,0 L2,0" fill="red" /></svg>'), auto;
+    /* cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="64" width="64"><text y="28" font-size="32">🌞</text><path d="M0,2 L0,0 L2,0" fill="red" /></svg>'), auto; */
   }
 
   #submit-title {

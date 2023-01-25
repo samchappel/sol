@@ -3,15 +3,27 @@
 const baseUrl = "https://api.sunrisesunset.io/json?"
 const endUrl = "&date=today"
 const sunriseList = document.querySelector('#sunrise-list')
-const parksUrl = 'http://localhost:3000/parks'
+const testURL = 'https://topher2014.github.io/Data/db.json'
+const parksUrl = 'https://topher2014.github.io/Data/db.json'
+// const parksUrl = 'http://localhost:3000/parks'
+
+testAPI(testURL)
+function testAPI(testURL){
+    fetch(testURL)
+    .then(r => r.json())
+    .then(data => {
+        console.log(data.parks)
+    })
+}
 
 // FETCH FUNCTIONS
 function getParks(parksUrl){
     fetch(parksUrl)
     .then(r => r.json())
     .then(parkArray => {
-        const sunnyParks = parkArray.map(park => getAllSunrises(park.lat, park.long, park.tmz, park))
-        // console.log(sunnyParks)
+        console.log(parkArray)
+        // parkArray.map(park => getAllSunrises(park.lat, park.long, park.tmz, park))
+    parkArray.parks.map(park => getAllSunrises(park.lat, park.long, park.tmz, park))
     })
 }
 
