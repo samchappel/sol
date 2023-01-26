@@ -1,4 +1,3 @@
-//HELLO SAM!!!
 // GLOBAL
 const baseUrl = "https://api.sunrisesunset.io/json?"
 const endUrl = "&date=today"
@@ -19,23 +18,34 @@ function getParks(parksUrl){
 function getAllSunrises(lat, lng, tmz, park) {
     return fetch(baseUrl + `lat=${lat}&lng=${lng}&timezone=${tmz}` + endUrl)
         .then(response => response.json())
-        .then((sunsetData) => renderNationalParks(park, sunsetData.results))
+        .then((sunsetData) => {
+            renderNationalParks(park, sunsetData.results)
+            postPark(park)
+            // updatePark(newCardObj, park.id)
+        })
 }
 
-// function getLocationData(url) {
-//     return fetch('url')
-//     .then(response => response.json())
-// }
-
-function getNationalParks(url) {
-    return fetch(url)
-        .then(response => response.json())
+function postPark(newCardObj) {
+    fetch(parksUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newCardObj)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
 }
 
 // RENDER FUNCTIONS
 function renderNationalParks(park, sunsetData) {
     // console.log(park)
-    console.log(sunsetData.sunrise)
+    // console.log(sunsetData.sunrise)
     const li = document.createElement('li')
     li.className = "list-li"
     const image = document.createElement('img')
@@ -84,13 +94,10 @@ sunForm.addEventListener('submit', (e) => {
         cityState,
         likes: 1
     }
-    renderNationalParks(getAllSunrises(lat, long, tmz, newCardObj))
+    getAllSunrises(lat, long, tmz, newCardObj)
+    // postPark(newCardObj)
     sunForm.reset()
 })
-
-// function iterateParks(parksArray) {
-//     parksArray.forEach(renderNationalParks)
-// }
 
 // INITIALIZERS
 getParks(parksUrl)
