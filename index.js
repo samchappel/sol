@@ -21,6 +21,7 @@ function getAllSunrises(lat, lng, tmz, park) {
         .then((sunsetData) => {
             renderNationalParks(park, sunsetData.results)
             postPark(park)
+            expandOnHover()
             // updatePark(newCardObj, park.id)
         })
 }
@@ -99,5 +100,20 @@ sunForm.addEventListener('submit', (e) => {
     sunForm.reset()
 })
 
+function expandOnHover() {
+    const listItems = document.querySelectorAll('.list-li');
+    listItems.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            item.style.transform = 'scale(1.1)';
+            item.style.transition = 'transform 0.2s';
+        });
+        item.addEventListener('mouseout', () => {
+            item.style.transform = 'scale(1)';
+            item.style.transition = 'transform 0.2s';
+        });
+    });
+}
+
 // INITIALIZERS
 getParks(parksUrl)
+expandOnHover()

@@ -62,6 +62,7 @@ button {
   background: rgba9992a6(0,0,0,0.5);
   text-align: center;
   color: white;
+  transition: transform 0.2s;
 }
 
 .list-li h3 {
