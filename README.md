@@ -8,7 +8,7 @@ It’s all sun and games until you run out of light. SOL is your go-to guide for
 Users can view photos of sunrises and sunsets for various national parks, as well as daily sun data for each location (including sunrise, sunset, and golden hour times, plus total hours of light for the current day). Our custom cursor rises to the occasion to guide users across the page. Adding a like is just a click away, and users can inspire others by submitting photos of their own sunrise or sunset. By including location details in the form, the site-specific sunrise, sunset, golden hour, and day length data is rendered along side the user's submission.
 
 ## Visual
-```add here```
+https://www.canva.com/design/DAFYwPfFT-8/nwpnrNz5sIcoDhh3lOymvw/watch?utm_content=DAFYwPfFT-8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 
 ## Contributors

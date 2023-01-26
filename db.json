@@ -8,7 +8,7 @@
       "long": "-68.273430",
       "tmz": "EST",
       "cityState": "Bar Harbor, Maine",
-      "likes": 17
+      "likes": 18
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "long": "-119.538330",
       "tmz": "PST",
       "cityState": "Yosemite, California",
-      "likes": 13
+      "likes": 14
     },
     {
       "id": 3,
@@ -48,7 +48,7 @@
       "long": "-83.489548",
       "tmz": "EST",
       "cityState": "Gatlinburg, Tennessee",
-      "likes": 7
+      "likes": 9
     },
     {
       "id": 6,
@@ -58,7 +58,17 @@
       "long": "-105.688103",
       "tmz": "MST",
       "cityState": "Estes Park, Colorado",
-      "likes": 9
+      "likes": 11
+    },
+    {
+      "image": "https://images.squarespace-cdn.com/content/v1/539be1d4e4b0984ce3f75915/1657665114149-BC7SX65HWEROFRTRTBH9/matera+landscape+photographer+olympic+national+park+wildflowers+mms9-18-5.jpg?format=2500w",
+      "location": "Olympic National Park",
+      "lat": "47.802109",
+      "long": "-123.604355",
+      "tmz": "PST",
+      "cityState": "Port Angeles, Washington",
+      "likes": 2,
+      "id": 7
     }
   ]
 }

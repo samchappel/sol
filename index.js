@@ -7,6 +7,7 @@ const sunForm = document.querySelector('#sun-form');
 
 // FETCH FUNCTIONS
 function getParks(parksUrl){
+    const data = JSON.parse(localStorage.getItem("parkId"))
     fetch(parksUrl)
     .then(r => r.json())
     .then(parkArray => {
@@ -29,6 +30,24 @@ function getAllSunrises(lat, lng, tmz, park) {
 function postPark(newCardObj) {
     fetch(parksUrl, {
         method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newCardObj)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        localStorage.setItem("parkId", JSON.stringify(data))
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
+
+function updatePark(newCardObj, parkId){
+    fetch(parksUrl + '/' + parkId, {
+        method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
         },
@@ -74,6 +93,7 @@ function renderNationalParks(park, sunsetData) {
         const newLikes = park.likes + 1;
         park.likes = newLikes
         likes.textContent = park.likes + ' likes'
+        updatePark(park, park.id)
     })
 }
 
