@@ -17,7 +17,7 @@
       
     <script defer src="index.js"></script>
   </div>
-
+<main>
   <div id="form-wrapper">
     <form id="sun-form">
 
@@ -26,13 +26,22 @@
       <label for="form-imageUrl">Image url:</label>
       <input type="text" id="form-imageUrl" name="imageUrl"  />
 
-        <label for="form-time">Location:</label>
+        <label for="form-location">Location:</label>
         <input type="text" id="form-title" name="title"  />
-    
-      <label for="form-location">City, State:</label>
-      <input type="text" id="form-location" name="location"  />
 
-      <label for="form-time">Sunrise:</label>
+        <label for="form-city-state">City, State:</label>
+        <input type="text" id="form-city-state" name="city-state"  />
+
+      <label for="form-lat">Latitude:</label>
+      <input type="text" id="form-lat" name="lat"  />
+
+      <label for="form-long">Longitude:</label>
+      <input type="text" id="form-long" name="long"  />
+
+      <label for="form-tmz">Time Zone (ex: PST):</label>
+      <input type="text" id="form-tmz" name="tmz"  />
+
+      <!-- <label for="form-time">Sunrise:</label>
       <input type="text" id="form-sunrise" name="sunrise"  />
 
       <label for="form-time">Sunset:</label>
@@ -42,11 +51,12 @@
       <input type="text" id="form-golden" name="golden-hour"  />
 
       <label for="form-quality">Day Length:</label>
-      <input type="text" id="form-length" name="day-length"  />
+      <input type="text" id="form-length" name="day-length"  /> -->
 
       <input type="submit" value="RISE & SHINE"/>
     </form>
   </div>
+</main>
 
 </body>
 </html>

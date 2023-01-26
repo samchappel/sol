@@ -32,6 +32,7 @@ html {
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
   
   #list {
     margin: 10px;
@@ -125,8 +126,7 @@ html {
   }
   
   button, [type="submit"] {
-    /* cursor: pointer; */
-    cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="32" width="64"><text y="28" font-size="32">🌅</text><path d="M0,2 L0,0 L2,0" fill="red" /></svg>'), auto;
+    cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="32" width="64"><text y="28" font-size="40">✨</text><path d="M0,2 L0,0 L2,0" fill="red" /></svg>'), auto;
     font-family: math;
   }
   
