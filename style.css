@@ -55,6 +55,7 @@ button {
 .list-li {
   list-style: none;
   width: 300px;
+  height:600px;
   /* box-shadow: 2px 2px 5px #c9c8c83e; */
   padding: 5px;
   margin: 10px;

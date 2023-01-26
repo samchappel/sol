@@ -71,7 +71,7 @@ function renderNationalParks(park, sunsetData) {
     const image = document.createElement('img')
     image.src = park.image
     const location = document.createElement('h3')
-    location.textContent = park.location
+    location.textContent = truncateTitle(park.location, 40);
     const cityState = document.createElement('h4')
     cityState.textContent = park.cityState
     const sunrise = document.createElement('p')
@@ -132,6 +132,14 @@ function expandOnHover() {
             item.style.transition = 'transform 0.2s';
         });
     });
+}
+
+function truncateTitle(title, maxLength) {
+    if (title.length > maxLength) {
+        return title.substring(0, maxLength - 3) + "...";
+    } else {
+        return title;
+    }
 }
 
 // INITIALIZERS
