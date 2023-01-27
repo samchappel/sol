@@ -65,17 +65,6 @@
       "city": "Estes Park",
       "state": "Colorado",
       "likes": 9
-    },
-    {
-      "image": "https://images.squarespace-cdn.com/content/v1/539be1d4e4b0984ce3f75915/1657665114149-BC7SX65HWEROFRTRTBH9/matera+landscape+photographer+olympic+national+park+wildflowers+mms9-18-5.jpg?format=2500w",
-      "location": "Olympic National Park",
-      "lat": 48.118146,
-      "long": -123.4307413,
-      "tmz": "",
-      "city": "Port Angeles",
-      "state": "Washington",
-      "likes": 1,
-      "id": 7
     }
   ]
 }
