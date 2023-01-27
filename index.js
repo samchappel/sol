@@ -4,8 +4,8 @@ const endUrl = "&date=today"
 const sunriseList = document.querySelector('#sunrise-list')
 const parksUrl = 'http://localhost:3000/parks'
 const sunForm = document.querySelector('#sun-form');
-const geocodeUrl = 'https://maps.googleapis.com/maps/api/geocode/json?'
-const geocodeKey = '&key=AIzaSyDIbzeTMPaKO2AA17vnqCmbHkGBL2ZPrmA'
+// const geocodeUrl = 'https://maps.googleapis.com/maps/api/geocode/json?'
+// const geocodeKey = '&key=AIzaSyDIbzeTMPaKO2AA17vnqCmbHkGBL2ZPrmA'
 
 // FETCH FUNCTIONS
 function getParks(parksUrl){
