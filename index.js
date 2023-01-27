@@ -25,7 +25,7 @@ function getAllSunrises(lat, lng, tmz, park) {
             renderNationalParks(park, sunsetData.results)
             postPark(park)
             expandOnHover()
-            // updatePark(newCardObj, park.id)
+            updatePark(lat, long, tmz, newCardObj)
         })
 }
 
@@ -87,7 +87,7 @@ function renderNationalParks(park, sunsetData) {
     const location = document.createElement('h3')
     location.textContent = truncateTitle(park.location, 40);
     const cityState = document.createElement('h4')
-    cityState.textContent = park.cityState
+    cityState.textContent = park.city + ', ' + park.state
     const sunrise = document.createElement('p')
     sunrise.textContent = 'Sunrise: ' + sunsetData.sunrise
     const sunset = document.createElement('p')
@@ -139,9 +139,10 @@ sunForm.addEventListener('submit', (e) => {
     // debugger
     const location = e.target[1].value
     const image = e.target[0].value
-    const cityState = e.target[2].value
-    const split = cityState.split(' ');
+    const city = e.target[2].value
+    const split = city.split(' ');
     const join = split.join('%20')
+    const state = e.target[3].value
     console.log(join)
     console.log(e.target[2].value)
     fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${join}&key=AIzaSyDIbzeTMPaKO2AA17vnqCmbHkGBL2ZPrmA`)
@@ -149,14 +150,15 @@ sunForm.addEventListener('submit', (e) => {
     .then((data) => {
         const lat = data.results[0].geometry.location.lat;
         const long = data.results[0].geometry.location.lng;
-        const tmz = e.target[3].value;
+        const tmz = e.target[4].value;
         const newCardObj = {
             image,
             location,
             lat,
             long,
             tmz,
-            cityState,
+            city,
+            state,
             likes: 1
         }
         console.log(e.target[3].value)

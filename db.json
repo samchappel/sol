@@ -7,8 +7,9 @@
       "lat": "44.338974",
       "long": "-68.273430",
       "tmz": "EST",
-      "cityState": "Bar Harbor, Maine",
-      "likes": 18
+      "city": "Bar Harbor",
+      "state": "Maine",
+      "likes": 17
     },
     {
       "id": 2,
@@ -17,8 +18,9 @@
       "lat": "37.865101",
       "long": "-119.538330",
       "tmz": "PST",
-      "cityState": "Yosemite, California",
-      "likes": 14
+      "city": "Yosemite",
+      "state": "California",
+      "likes": 13
     },
     {
       "id": 3,
@@ -27,7 +29,8 @@
       "lat": "38.326869",
       "long": "-109.878259",
       "tmz": "MST",
-      "cityState": "Moab, Utah",
+      "city": "Moab",
+      "state": "Utah",
       "likes": 11
     },
     {
@@ -37,7 +40,8 @@
       "lat": "48.7718",
       "long": "-121.2985",
       "tmz": "PST",
-      "cityState": "Sedro-Woolley, Washington",
+      "city": "Sedro-Woolley",
+      "state": "Washington",
       "likes": 15
     },
     {
@@ -47,7 +51,8 @@
       "lat": "35.611763",
       "long": "-83.489548",
       "tmz": "EST",
-      "cityState": "Gatlinburg, Tennessee",
+      "city": "Gatlinburg",
+      "state": "Tennessee",
       "likes": 7
     },
     {
@@ -57,8 +62,20 @@
       "lat": "40.343182",
       "long": "-105.688103",
       "tmz": "MST",
-      "cityState": "Estes Park, Colorado",
+      "city": "Estes Park",
+      "state": "Colorado",
       "likes": 9
+    },
+    {
+      "image": "https://images.squarespace-cdn.com/content/v1/539be1d4e4b0984ce3f75915/1657665114149-BC7SX65HWEROFRTRTBH9/matera+landscape+photographer+olympic+national+park+wildflowers+mms9-18-5.jpg?format=2500w",
+      "location": "Olympic National Park",
+      "lat": 48.118146,
+      "long": -123.4307413,
+      "tmz": "",
+      "city": "Port Angeles",
+      "state": "Washington",
+      "likes": 1,
+      "id": 7
     }
   ]
 }
