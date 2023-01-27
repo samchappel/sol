@@ -4,6 +4,8 @@ const endUrl = "&date=today"
 const sunriseList = document.querySelector('#sunrise-list')
 const parksUrl = 'http://localhost:3000/parks'
 const sunForm = document.querySelector('#sun-form');
+const geocodeUrl = 'https://maps.googleapis.com/maps/api/geocode/json?'
+const geocodeKey = '&key=AIzaSyDIbzeTMPaKO2AA17vnqCmbHkGBL2ZPrmA'
 
 // FETCH FUNCTIONS
 function getParks(parksUrl){
@@ -27,6 +29,18 @@ function getAllSunrises(lat, lng, tmz, park) {
         })
 }
 
+// function fetchLatLng(city, state, apiKey) {
+//     const geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${city},${state}&key=${apiKey}`;
+//     return fetch(geocodeUrl)
+//       .then(response => response.json())
+//       .then(data => {
+//         const lat = data.results[0].geometry.location.lat;
+//         const long = data.results[0].geometry.location.lng;
+//         return { lat, lng };
+//       })
+//       .catch(error => console.error('Error:', error));
+//   }
+
 function postPark(newCardObj) {
     fetch(parksUrl, {
         method: 'POST',
@@ -47,7 +61,7 @@ function postPark(newCardObj) {
 
 function updatePark(newCardObj, parkId){
     fetch(parksUrl + '/' + parkId, {
-        method: 'PUT',
+        method: 'PATCH',
         headers: {
             'Content-Type': 'application/json'
         },
@@ -97,28 +111,73 @@ function renderNationalParks(park, sunsetData) {
     })
 }
 
+// sunForm.addEventListener('submit', (e) => {
+//     e.preventDefault()
+//     // debugger
+//     const lat = e.target[3].value
+//     const long = e.target[4].value
+//     const tmz = e.target[5].value
+//     const image = e.target[0].value
+//     const location = e.target[1].value
+//     const cityState = e.target[2].value
+//     const newCardObj = {
+//         image,
+//         location,
+//         lat,
+//         long,
+//         tmz,
+//         cityState,
+//         likes: 1
+//     }
+//     getAllSunrises(lat, long, tmz, newCardObj)
+//     // postPark(newCardObj)
+//     sunForm.reset()
+// })
+
 sunForm.addEventListener('submit', (e) => {
     e.preventDefault()
     // debugger
-    const lat = e.target[3].value
-    const long = e.target[4].value
-    const tmz = e.target[5].value
-    const image = e.target[0].value
     const location = e.target[1].value
+    const image = e.target[0].value
     const cityState = e.target[2].value
-    const newCardObj = {
-        image,
-        location,
-        lat,
-        long,
-        tmz,
-        cityState,
-        likes: 1
-    }
-    getAllSunrises(lat, long, tmz, newCardObj)
-    // postPark(newCardObj)
+    const split = cityState.split(' ');
+    const join = split.join('%20')
+    console.log(join)
+    console.log(e.target[2].value)
+    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${join}&key=AIzaSyDIbzeTMPaKO2AA17vnqCmbHkGBL2ZPrmA`)
+    .then(response => response.json())
+    .then((data) => {
+        const lat = data.results[0].geometry.location.lat;
+        const long = data.results[0].geometry.location.lng;
+        const tmz = e.target[3].value;
+        const newCardObj = {
+            image,
+            location,
+            lat,
+            long,
+            tmz,
+            cityState,
+            likes: 1
+        }
+        console.log(e.target[3].value)
+        getAllSunrises(lat, long, tmz, newCardObj)
+    })
     sunForm.reset()
 })
+
+// fetch('https://maps.googleapis.com/maps/api/geocode/json?address=Mountain%20View%20CA&key=AIzaSyDIbzeTMPaKO2AA17vnqCmbHkGBL2ZPrmA')
+// .then(response => response.json())
+// .then(console.log)
+
+// function testSplit() {
+//     const str = "Mountain View"
+//     const splitStr = str.split(' ')
+//     console.log(splitStr)
+//     const join = splitStr.join('%20')
+//     console.log(join)
+// }
+
+// testSplit()
 
 function expandOnHover() {
     const listItems = document.querySelectorAll('.list-li');
