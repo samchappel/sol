@@ -9,7 +9,7 @@ Users can view photos of sunrises and sunsets for various national parks, as wel
 
 ## Visual
 
- ![gif walkthrough](https://github.com/samchappel/sol/blob/main/sol-visual.gif)
+ ![gif walkthrough](https://github.com/samchappel/sol/blob/main/sol-visual)
 
 
 ## Contributors
