@@ -9,7 +9,7 @@
       "tmz": "EST",
       "city": "Bar Harbor",
       "state": "Maine",
-      "likes": 18
+      "likes": 21
     },
     {
       "id": 2,
@@ -20,7 +20,7 @@
       "tmz": "PST",
       "city": "Yosemite",
       "state": "California",
-      "likes": 14
+      "likes": 17
     },
     {
       "id": 3,
@@ -53,7 +53,7 @@
       "tmz": "EST",
       "city": "Gatlinburg",
       "state": "Tennessee",
-      "likes": 9
+      "likes": 12
     },
     {
       "id": 6,
