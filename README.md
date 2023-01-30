@@ -18,9 +18,9 @@ Users can view photos of sunrises and sunsets for various national parks, as wel
 Github: <a href="https://github.com/samchappel">samchappel</a><br>
 Email: <a href="mailto:m.samchappel@gmail.com">m.samchappel@gmail.com</a>
 
-### Topher Ludlow
-Github: <a href="https://github.com/topher2014">topher2014</a><br>
-Email: <a href="mailto:topherludlow@protonmail.com">topherludlow@protonmail.com</a>
+#### Topher Ludlow
+##### Github: <a href="https://github.com/topher2014">topher2014</a><br>
+##### Email: <a href="mailto:topherludlow@protonmail.com">topherludlow@protonmail.com</a>
 
 ## Project Status
 Stay tuned... big things will be rising soon!
