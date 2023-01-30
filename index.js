@@ -145,7 +145,7 @@ sunForm.addEventListener('submit', (e) => {
     const state = e.target[3].value
     console.log(join)
     console.log(e.target[2].value)
-    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${join}&key=AIzaSyBXjqPb_Wp0h5bFk4PMcSNSHirEWqyejGQ`)
+    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${join}&key=`)
     .then(response => response.json())
     .then((data) => {
         const lat = data.results[0].geometry.location.lat;
